@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "378096264695",
+    "project_id": "helpme-f222b",
+    "storage_bucket": "helpme-f222b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378096264695:android:eb579fe0eb426a52187af2",
+        "android_client_info": {
+          "package_name": "com.helpme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378096264695-vfgg58tcnpr4tdhri1h9s4p86vef1teg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIg1fbeimE66k96nlv8HsPZQI6CM9kvbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378096264695-vfgg58tcnpr4tdhri1h9s4p86vef1teg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "378096264695-vvm3fin5jvq3m0k3jq84hdba7f6fhrbt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.helpme"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
