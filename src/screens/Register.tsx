@@ -23,7 +23,7 @@ export function Register() {
 
     setIsLoading(true);
 
-    firestore().collection('order')
+    firestore().collection('orders')
       .add({
         patrimony,
         description,
