@@ -1,4 +1,4 @@
-# Em construção...
+# README Em Construção...
 
 ### Como configurar um projeto expo to em Typescript?
 - #1-Altere o "App.js" para "App.tsx"
@@ -13,3 +13,6 @@
 - Mas nesse link "https://docs.expo.dev/guides/config-plugins/", você consegue
 visualizar como utilizar os plugins do expo para autormatização das configurações do
 firebase nas pastas "android" e "ios".
+
+### Material de Apoio
+- https://efficient-sloth-d85.notion.site/Ignite-Lab-03-606aca4553fc4acc90505eae21521403
