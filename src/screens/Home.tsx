@@ -19,6 +19,7 @@ export function Home() {
   const [isLoading, setIsLoading] = useState(true);
   const [statusSelected, setStatusSelected] = useState<'open' | 'closed'>('open');
   const [orders, setOrders] = useState<OrderProps[]>([]);
+  const [quantityOrders, setQuantityOrders] = useState(0);
   const navigation = useNavigation();
 
   function handleNewOrder() {
@@ -26,7 +27,7 @@ export function Home() {
   }
 
   function handleOpenDetails(orderId: string) {
-    navigation.navigate('details', { orderId: '1' })
+    navigation.navigate('details', { orderId: orderId });
   }
 
   function handleLogout() {
@@ -44,7 +45,6 @@ export function Home() {
       .onSnapshot(snapshot => {
         const data = snapshot.docs.map(doc => {
           const { patrimony, description, status, created_at } = doc.data();
-
           return {
             id: doc.id,
             patrimony,
@@ -56,6 +56,7 @@ export function Home() {
         });
 
         setOrders(data);
+        setQuantityOrders(data.length);
         setIsLoading(false);
       });
 
@@ -94,7 +95,7 @@ export function Home() {
             Solicitações
           </Heading>
           <Text color="gray.200">
-            3 {/*Numero de solicitações em aberto*/}
+            {quantityOrders} {/*Numero de solicitações em aberto*/}
           </Text>
         </HStack>
 
