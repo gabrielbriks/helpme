@@ -137,7 +137,7 @@ export function Details() {
         />
 
         <CardDetails
-          title="Descrição do problema"
+          title="Descrição da solução"
           icon={Clipboard}
           footer={order.closed && `Encerrado em um ${order.closed}`}
           description={order.status == 'closed' && `${order.description}`}
